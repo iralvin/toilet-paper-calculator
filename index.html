@@ -1,35 +1,27 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Toilet Paper Calculator</title>
-        <link rel="stylesheet" href="stylesheet.css">
-        <script src="main.js" defer></script>
-    </head>
+  <head>
+    <meta charset="utf-8" />
+    <title>Toilet Paper Calculator</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <script src="main.js" defer></script>
+  </head>
 
+  <body>
+    <div id="toilet-paper-container">
+      <h1 class="header__title">Toilet Paper Calculator</h1>
+	  <p class="header__subtitle">Calculate how much each sheet of toilet paper costs.</p>
+	  
+      <p class="input__title">Enter Price:</p>
+	  <input class="input__text input__text_price" type="number" id="price" autocomplete="off"/>
+	  
+      <p class="input__title">Enter Number of Rolls in Pack:</p>
+	  <input  class="input__text input__text_rolls" type="number" id="number-of-rolls" autocomplete="off"/>
+	  
+      <p class="input__title">Enter Number of Sheets Per Roll:</p>
+      <input  class="input__text input__text_sheets" type="number" id="number-of-sheets" autocomplete="off"/>
 
-    <body>
-        <div id="toilet-paper-container">
-            <h1>Toilet Paper Calculator</h1>
-            <p>Calculate how much each sheet of toilet paper costs.</p>
-            <p>
-                Enter Price: <input type="number" id="price">
-            </p>
-            <p>
-                Enter Number of Rolls in Pack: <input type="number" id="number-of-rolls">
-            </p>
-            <p>
-                Enter Number of Sheets Per Roll: <input type="number" id="number-of-sheets">
-            </p>
-            
-            <p id="cost-per-sheet"><b>Cost per sheet:</b> </p>
-        </div>
-
-        <!-- <div id="buttons-container">
-            <button id="calculate-button">Calculate</button>
-        </div> -->
-    </body>
-
-
-
+      <p class="final-cost__text" id="cost-per-sheet"><b>Cost per sheet:</b> <span class="final-cost__price"></span></p>
+    </div>
+  </body>
 </html>

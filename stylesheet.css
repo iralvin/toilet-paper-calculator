@@ -1,4 +1,8 @@
-#cost-per-sheet{
+.input__title{
+  margin: 30px 0 5px 0;
+}
+
+.final-cost__text{
     font-size: 25px;
 }
 
